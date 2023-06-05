@@ -2,11 +2,16 @@
 
 Bottle_Flip.py
 
-This is a project I created on my own. My son (6) and his friends are very into flipping bottles. I used that to create a mini "game" for him. He enjoyed it so much, he took over my computer for about 30 minutes when I     first completed this and reguarly asks to play. It's a simple project but because of this I am rather proud of it.
+This is a personal project I developed independently. Inspired by my son (6) and his friends' enthusiasm for bottle flipping, I created a mini "game" that provided entertainment for him. The initial completion of the project brought him so much joy that he actively requests to play it. While the project is relatively simple, I take pride in its success and the enjoyment it has brought.
 
 
 Random_Password_Generator.py & Snake_Game.py
 
-These are projects I created following a written tutorial (no video to follow along with). Of course, along the way there were errors and bugs that popped up, which I had to fix on my own (mostly). Although, I did not create these from scratch on my own, I do understand what is being done within these programs and can change/edit the code to update or make changes. Snake_Game.py is a bit advanced for me at this point (having only been coding for a few months) but it was a fun project, where I learned a lot and I look forward to coming back to something similiar in the future to see how I hold up.
+These projects were undertaken by following a written tutorial, without the aid of a video guide. Throughout the process, I encountered and resolved various errors and bugs, mostly through independent problem-solving. Although I did not create these projects entirely from scratch, I possess a comprehensive understanding of their inner workings and can modify and update the code as needed. Snake_Game.py, being more advanced, presented a challenge considering my limited experience of only a few months in coding. 
 
-I'd be happy to answer any questions about any of these projects or take any advice, of course!
+
+PDF Resume Generator.py
+
+During my exploration of new project ideas, I discovered the realm of PDF editing and found it intriguing. Recognizing the significance of a well-crafted resume, I decided to leverage Python to create a program that generates professional resumes in PDF format. Although I drew inspiration from previous projects such as the Random Password Generator and Snake Game, I pursued this endeavor without relying on any specific guide, relying instead on a process of trial and error combined with extensive online research. The undertaking proved to be both challenging and exhilarating, ultimately yielding a refined resume generation tool. With an emphasis on producing proficient yet elegantly simple resumes, this tool has proven to be a valuable source of learning experiences of immeasurable worth. Reflecting upon my journey, I take pride in the knowledge gained and eagerly anticipate the future growth that awaits as I continually hone my skills.
+
+I am open to answering any inquiries or welcoming any advice pertaining to these projects.
