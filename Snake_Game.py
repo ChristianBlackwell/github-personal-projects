@@ -25,8 +25,10 @@ snake_speed = 15
 font_style = pygame.font.SysFont("bahnschrift", 20)
 score_font = pygame.font.SysFont("comicsansms", 20)
 
-def Your_score(score):
-    value = score_font.render("Your Score: " + str(score), True, yellow)
+high_score = 0
+
+def Your_score(score, high_score):
+    value = score_font.render("Your Score: " + str(score) + " High Score: " + str(high_score), True, yellow)
     dis.blit(value, [0,0])
 
 def our_snake(snake_block, snake_list):
@@ -40,6 +42,11 @@ def message(msg,color):
 def gameLoop():
     game_over = False
     game_close = False
+    try:
+        with open("highscore.txt", "r") as file:
+            high_score = int(file.read())
+    except (ValueError, FileNotFoundError):
+        high_score = 0
 
     x1 = dis_width / 2
     y1 = dis_height / 2
@@ -54,11 +61,21 @@ def gameLoop():
     foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
 
     while not game_over:
+        with open("highscore.txt", "w") as file:
+            file.write(str(high_score))
 
         while game_close == True:
+            if Length_of_snake - 1 > high_score:
+                high_score = Length_of_snake - 1
+                with open("highscore.txt", "w") as file:
+                    file.write(str(high_score))
             dis.fill(blue)
             message ("You lost! Press C-Play Again or Q-Quit", red)
-            Your_score(Length_of_snake - 1)
+
+            Your_score(Length_of_snake - 1, high_score)
+            if Length_of_snake - 1 > high_score:
+                high_score = Length_of_snake - 1
+
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -104,7 +121,7 @@ def gameLoop():
                 game_close = True
 
         our_snake(snake_block, snake_list)
-        Your_score(Length_of_snake - 1)
+        Your_score(Length_of_snake - 1,high_score)
 
         pygame.display.update()
 
