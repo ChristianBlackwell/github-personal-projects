@@ -1,4 +1,4 @@
-# Personal Projects
+# Personal Projects - Project Details
 
 Bottle_Flip.py
 
